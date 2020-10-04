@@ -10,7 +10,7 @@ export default function errorException(
   if (err instanceof AppError) {
     return response.status(err.statusCode).json({
       status: 'error',
-      error: err.message,
+      message: err.message,
     });
   }
 
